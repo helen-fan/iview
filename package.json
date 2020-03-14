@@ -33,12 +33,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/helen-fan/iviewTest"
+    "url": "https://github.com/helen-fan/iview"
   },
   "author": "Aresn",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/helen-fan/iviewTest/issues"
+    "url": "https://github.com/helen-fan/iview/issues"
   },
   "dependencies": {
     "async-validator": "^1.8.2",
