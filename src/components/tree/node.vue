@@ -84,7 +84,7 @@
                 return [
                     `${prefixCls}-arrow`,
                     {
-                        // 禁用节点后可以展开 2018/4/24 by XXX改
+                        // 禁用节点后可以展开 2018/4/24 by xxx改
                         // [`${prefixCls}-arrow-disabled`]: this.data.disabled,
                         [`${prefixCls}-arrow-open`]: this.data.expand
                     }
@@ -94,7 +94,7 @@
                 return [
                     `${prefixCls}-title`,
                     {
-                        // 禁用节点后可以展开 2018/4/24 by XXX改
+                        // 禁用节点后可以展开 2018/4/24 by xxx改
                         [`${prefixCls}-title-disabled`]: this.data.disabled,
                         [`${prefixCls}-title-selected`]: this.data.selected
                     }
@@ -134,7 +134,7 @@
         methods: {
             handleExpand () {
                 const item = this.data;
-                // 禁用节点后可以展开 2018/4/24 by XXX改
+                // 禁用节点后可以展开 2018/4/24 by xxx改
                 // if (item.disabled) return;
 
                 // async loading
@@ -160,7 +160,7 @@
             },
             handleSelect () {
                 if (this.data.disabled) return;
-                // 已经选择后不能取消 2018/4/24 by XXX改
+                // 已经选择后不能取消 2018/4/24 by xxx改
                 if (this.data.selected) return;
                 this.dispatch('Tree', 'on-selected', this.data.nodeKey);
             },

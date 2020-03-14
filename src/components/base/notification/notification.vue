@@ -28,7 +28,7 @@
     const now = Date.now();
 
     function getUuid () {
-        return 'swNotification_' + now + '_' + (seed++);
+        return 'ivuNotification_' + now + '_' + (seed++);
     }
 
     export default {

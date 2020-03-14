@@ -2,7 +2,7 @@ import Notification from '../base/notification';
 
 const prefixCls = 'ivu-message';
 const iconPrefixCls = 'ivu-icon';
-const prefixKey = 'sw_message_key_';
+const prefixKey = 'ivu_message_key_';
 
 const defaults = {
     top: 24,

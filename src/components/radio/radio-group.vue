@@ -11,7 +11,7 @@
 
     let seed = 0;
     const now = Date.now();
-    const getUuid = () => `swRadioGroup_${now}_${seed++}`;
+    const getUuid = () => `ivuRadioGroup_${now}_${seed++}`;
 
     export default {
         name: 'RadioGroup',
