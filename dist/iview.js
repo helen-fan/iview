@@ -22929,7 +22929,11 @@ exports.default = {
         },
         columns: {
             handler: function handler() {
-                var colsWithId = this.makeColumnsId(this.columns);
+                //[Fix Bug]You may have an infinite update loop in watcher with expression "columns"
+                var tempClonedColumns = (0, _assist.deepCopy)(this.columns);
+                var colsWithId = this.makeColumnsId(tempClonedColumns);
+                //[Fix Bug End]
+                // var colsWithId = this.makeColumnsId(this.columns);
                 this.allColumns = (0, _util.getAllColumns)(colsWithId);
                 this.cloneColumns = this.makeColumns(colsWithId);
 

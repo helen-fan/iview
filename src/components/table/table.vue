@@ -943,9 +943,7 @@
             columns: {
                 handler () {
                     // todo 这里有性能问题，可能是左右固定计算属性影响的
-                    var tempClonedColumns = (0, _assist.deepCopy)(this.columns);
-                    var colsWithId = this.makeColumnsId(tempClonedColumns);
-                    // const colsWithId = this.makeColumnsId(this.columns);
+                    const colsWithId = this.makeColumnsId(this.columns);
                     this.allColumns = getAllColumns(colsWithId);
                     this.cloneColumns = this.makeColumns(colsWithId);
 
